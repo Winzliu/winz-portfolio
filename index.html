@@ -7,53 +7,145 @@
     <title>Portofolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/myCss.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Graduate&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="font-graduate">
     <!-- Navbar -->
-    <nav class="flex justify-center items-center fixed z-50 w-40 h-screen">
+    <nav class="flex justify-center items-center fixed z-50 w-40 min-h-screen">
       <!-- Link Navbar -->
       <ul
         class="flex flex-col gap-9 w-36 justify-center h-3/4 transition-all ml-6"
       >
-        <li class="flex text-xl w-32 h-14 relative">
-          <ion-icon
-            class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
-            name="home-outline"
-          ></ion-icon>
-          <div class="hidden absolute right-6 top-1/2 -translate-y-[60%]">
+        <li class="flex text-lg w-32 h-14 relative">
+          <a class="block z-0" href="#Home">
+            <ion-icon
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              name="home-outline"
+            ></ion-icon>
+          </a>
+          <div class="hidden absolute right-4 top-1/2 -translate-y-[60%]">
             Home
           </div>
         </li>
-        <li class="flex text-xl w-32 h-14 relative">
-          <ion-icon
-            class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
-            name="person-outline"
-          ></ion-icon>
-          <div class="hidden absolute right-6 top-1/2 -translate-y-[60%]">
+        <li class="flex text-lg w-32 h-14 relative">
+          <a class="block z-0" href="#About">
+            <ion-icon
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              name="person-outline"
+            ></ion-icon>
+          </a>
+          <div class="hidden absolute right-3 top-1/2 -translate-y-[60%]">
             About
           </div>
         </li>
-        <li class="flex text-xl w-32 h-14 relative">
-          <ion-icon
-            class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
-            name="document-outline"
-          ></ion-icon>
-          <div class="hidden absolute right-6 top-1/2 -translate-y-[60%]">
+        <li class="flex text-lg w-32 h-14 relative">
+          <a class="block z-0" href="#Project">
+            <ion-icon
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              name="document-outline"
+            ></ion-icon>
+          </a>
+          <div class="hidden absolute right-0 top-1/2 -translate-y-[60%]">
             Project
           </div>
         </li>
-        <li class="flex text-xl w-32 h-14 relative">
-          <ion-icon
-            class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
-            name="mail-outline"
-          ></ion-icon>
-          <div class="hidden absolute right-4 top-1/2 -translate-y-[60%]">
+        <li class="flex text-lg w-32 h-14 relative">
+          <a class="block z-0" href="#Contact">
+            <ion-icon
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              name="mail-outline"
+            ></ion-icon>
+          </a>
+          <div class="hidden absolute right-0 top-1/2 -translate-y-[60%]">
             Contact
           </div>
         </li>
       </ul>
     </nav>
     <!-- Akhir Navbar -->
+
+    <!-- Home -->
+    <div
+      id="Home"
+      class="m-auto min-h-screen flex flex-col justify-center items-center background-image"
+    >
+      <div
+        class="rounded-full w-60 h-60 object-cover block overflow-hidden bg-amber-200"
+      >
+        <img class="w-60 h-60 object-cover" src="img/Alwin.jpeg" alt="" />
+      </div>
+      <h1 class="mt-7 font-alegreya text-7xl text-center block">
+        Alwin Liufandy
+      </h1>
+      <p class="mt-4 text-lg">Member Of GDSC USU 2022/2023</p>
+    </div>
+    <!-- Akhir Home -->
+
+    <!-- About -->
+    <div
+      id="About"
+      class="relative m-auto h-[45rem] flex flex-col justify-center items-center"
+    >
+      <div class="absolute z-10 top-14 text-4xl">
+        <h1>ABOUT</h1>
+        <hr class="bg-cyan-500 h-1 w-1/2 m-auto" />
+      </div>
+      <div
+        class="absolute flex justify-evenly items-center jus bottom-10 rounded-3xl w-11/12 h-4/5 md:w-3/4 glass-effect"
+      >
+        <div class="w-2/5 h-4/5 p-4 relative GDSC">
+          <h1 class="text-3xl text-center">GDSC</h1>
+          <hr class="bg-black h-1 border-none" />
+          <p class="text-lg mt-4 text-center">
+            Google Developer Student Clubs are university based community groups
+            for students interested in Google developer technologies. Students
+            from all undergraduate or graduate programs with an interest in
+            growing as a developer are welcome. By joining a GDSC, students grow
+            their knowledge in a peer-to-peer learning environment and build
+            solutions for local businesses and their community.
+          </p>
+        </div>
+        <div class="w-2/5 h-4/5 p-4 relative Me">
+          <h1 class="text-3xl text-center">Alwin Liufandy</h1>
+          <hr class="bg-black h-1 border-none" />
+          <p class="text-lg mt-4 text-center">
+            Hi! My name is Alwin Liufandy and u can call me Alwin. I’m an 18
+            years old developer. I’m a college student at Universitas Sumatera
+            Utara (USU) majoring in Information technology 22.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir About -->
+
+    <!-- Project -->
+    <div id="Project" class="px-10 py-5">
+      <div class="text-4xl w-2/12 m-auto">
+        <h1 class="text-center">PROJECT</h1>
+        <hr class="bg-cyan-500 h-1 w-1/2 m-auto border-none" />
+      </div>
+      <div class="glass-effect w-4/5 h-[35rem] mt-5 m-auto"></div>
+    </div>
+    <!-- Akhir Project -->
+
+    <!-- Contact -->
+    <div id="Contact" class="px-10 py-5">
+      <div class="text-4xl w-2/12 m-auto">
+        <h1 class="text-center">Contact</h1>
+        <hr class="bg-cyan-500 h-1 w-1/2 m-auto border-none" />
+      </div>
+      <div class="w-4/5 h-56 mt-5 m-auto flex">
+        <div class="h-3/4 w-1/2 bg-rose-200"></div>
+        <div class="h-3/4 w-1/2 bg-red-300"></div>
+      </div>
+    </div>
+    <!-- Akhir Contact -->
 
     <script src="script.js"></script>
     <!-- ionicons -->
