@@ -25,44 +25,48 @@
         <li class="flex text-lg w-32 h-14 relative">
           <a class="block z-0" href="#Home">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Home"
               name="home-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-4 top-1/2 -translate-y-[60%]">
+          <div class="hidden absolute right-4 top-1/2 -translate-y-[60%] Home">
             Home
           </div>
         </li>
         <li class="flex text-lg w-32 h-14 relative">
           <a class="block z-0" href="#About">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left About"
               name="person-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-3 top-1/2 -translate-y-[60%]">
+          <div class="hidden absolute right-3 top-1/2 -translate-y-[60%] About">
             About
           </div>
         </li>
         <li class="flex text-lg w-32 h-14 relative">
           <a class="block z-0" href="#Project">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Project"
               name="document-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-0 top-1/2 -translate-y-[60%]">
+          <div
+            class="hidden absolute right-0 top-1/2 -translate-y-[60%] Project"
+          >
             Project
           </div>
         </li>
         <li class="flex text-lg w-32 h-14 relative">
           <a class="block z-0" href="#Contact">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left"
+              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Contact"
               name="mail-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-0 top-1/2 -translate-y-[60%]">
+          <div
+            class="hidden absolute right-0 top-1/2 -translate-y-[60%] Contact"
+          >
             Contact
           </div>
         </li>
@@ -97,7 +101,7 @@
         <hr class="bg-cyan-500 h-1 w-1/2 m-auto" />
       </div>
       <div
-        class="absolute flex justify-evenly items-center jus bottom-10 rounded-3xl w-11/12 h-4/5 md:w-3/4 glass-effect"
+        class="absolute flex justify-evenly items-center bottom-10 rounded-3xl w-11/12 h-4/5 md:w-3/4 glass-effect"
       >
         <div class="w-2/5 h-4/5 p-4 relative GDSC">
           <h1 class="text-3xl text-center">GDSC</h1>
@@ -126,27 +130,53 @@
 
     <!-- Project -->
     <div id="Project" class="px-10 py-5">
-      <div class="text-4xl w-2/12 m-auto">
+      <div class="text-4xl w-48 m-auto">
         <h1 class="text-center">PROJECT</h1>
         <hr class="bg-cyan-500 h-1 w-1/2 m-auto border-none" />
       </div>
-      <div class="glass-effect w-4/5 h-[35rem] mt-5 m-auto"></div>
+      <div class="glass-effect w-full md:w-3/4 h-[35rem] mt-5 m-auto"></div>
     </div>
     <!-- Akhir Project -->
 
     <!-- Contact -->
     <div id="Contact" class="px-10 py-5">
-      <div class="text-4xl w-2/12 m-auto">
+      <div class="text-4xl w-48 m-auto">
         <h1 class="text-center">Contact</h1>
         <hr class="bg-cyan-500 h-1 w-1/2 m-auto border-none" />
       </div>
-      <div class="w-4/5 h-56 mt-5 m-auto flex">
-        <div class="h-3/4 w-1/2 bg-rose-200"></div>
-        <div class="h-3/4 w-1/2 bg-red-300"></div>
+      <div class="w-4/5 h-56 mt-5 m-auto flex flex-col sm:flex-row">
+        <div class="h-3/4 w-full flex flex-col sm:w-1/2">
+          <a
+            class="m-auto"
+            href="https://api.whatsapp.com/send?phone=6281362549559"
+            target="_blank"
+          >
+            <ion-icon
+              class="text-9xl rounded-r-full rounded-tl-full"
+              name="logo-whatsapp"
+            ></ion-icon>
+          </a>
+          <h1 class="text-center text-xl font-bold">Whatsapp</h1>
+        </div>
+        <div class="h-3/4 w-full my-10 sm:w-1/2 sm:my-0 flex flex-col">
+          <a
+            href="https://instagram.com/winz.liu"
+            target="_blank"
+            class="m-auto"
+          >
+            <ion-icon
+              class="text-9xl rounded-[3rem]"
+              name="logo-instagram"
+            ></ion-icon>
+          </a>
+          <h1 class="text-center text-xl font-bold">Instagram</h1>
+        </div>
       </div>
     </div>
     <!-- Akhir Contact -->
 
+    <!-- jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <!-- ionicons -->
     <script
