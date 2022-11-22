@@ -17,60 +17,107 @@
   </head>
   <body class="font-graduate">
     <!-- Navbar -->
-    <nav class="flex justify-center items-center fixed z-50 w-40 min-h-screen">
+    <nav
+      class="md:flex md:justify-center md:items-center md:fixed md:z-50 md:w-40 md:min-h-screen w-full fixed justify-end flex z-50 md:bg-transparent rounded-b-lg"
+    >
       <!-- Link Navbar -->
       <ul
-        class="flex flex-col gap-9 w-36 justify-center h-3/4 transition-all ml-6"
+        class="md:flex md:flex-col md:gap-9 md:w-36 md:justify-center md:h-3/4 md:transition-all md:ml-6 flex-grow ml-8 my-3 hidden"
       >
-        <li class="flex text-lg w-32 h-14 relative">
-          <a class="block z-0" href="#Home">
+        <li class="flex md:text-lg md:w-32 md:h-14 md:relative text-xl">
+          <a class="md:block md:z-0" href="#Home">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Home"
+              class="md:bg-slate-200 md:shadow-xl md:p-4 md:rounded-full md:transition-all md:duration-100 md:relative md:text-left Home hidden md:block"
               name="home-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-4 top-1/2 -translate-y-[60%] Home">
+          <div
+            class="md:block md:hidden md:absolute md:right-4 md:top-1/2 md:-translate-y-[60%] Home hidden"
+          >
             Home
           </div>
+          <!-- phone -->
+          <a
+            href="#Home"
+            class="bg-slate-300 rounded-xl w-3/4 text-center hover:bg-slate-400 duration-150 my-2 transition-all duration-200 md:hidden"
+          >
+            <div class="my-1">Home</div>
+          </a>
         </li>
-        <li class="flex text-lg w-32 h-14 relative">
-          <a class="block z-0" href="#About">
+        <li class="flex md:text-lg md:w-32 md:h-14 md:relative text-xl">
+          <a class="md:block md:z-0" href="#About">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left About"
+              class="md:bg-slate-200 md:shadow-xl md:p-4 md:rounded-full md:transition-all md:duration-100 md:relative md:text-left About hidden md:block"
               name="person-outline"
             ></ion-icon>
           </a>
-          <div class="hidden absolute right-3 top-1/2 -translate-y-[60%] About">
+          <div
+            class="md:block md:hidden md:absolute md:right-3 md:top-1/2 md:-translate-y-[60%] About hidden"
+          >
             About
           </div>
+          <!-- phone -->
+          <a
+            href="#About"
+            class="bg-slate-300 rounded-xl w-3/4 text-center hover:bg-slate-400 duration-150 my-2 md:hidden"
+          >
+            <div class="my-1">About</div>
+          </a>
         </li>
-        <li class="flex text-lg w-32 h-14 relative">
-          <a class="block z-0" href="#Project">
+        <li class="flex md:text-lg md:w-32 md:h-14 md:relative text-xl">
+          <a class="md:block md:z-0" href="#Project">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Project"
+              class="md:bg-slate-200 md:shadow-xl md:p-4 md:rounded-full md:transition-all md:duration-100 md:relative md:text-left Project hidden md:block"
               name="document-outline"
             ></ion-icon>
           </a>
           <div
-            class="hidden absolute right-0 top-1/2 -translate-y-[60%] Project"
+            class="md:block md:hidden md:absolute md:right-0 md:top-1/2 md:-translate-y-[60%] Project hidden"
           >
             Project
           </div>
+          <!-- phone -->
+          <a
+            href="#Project"
+            class="bg-slate-300 rounded-xl w-3/4 text-center hover:bg-slate-400 duration-150 my-2 md:hidden"
+          >
+            <div class="my-1">Project</div>
+          </a>
         </li>
-        <li class="flex text-lg w-32 h-14 relative">
-          <a class="block z-0" href="#Contact">
+        <li class="flex md:text-lg md:w-32 md:h-14 md:relative text-xl">
+          <a class="md:block md:z-0" href="#Contact">
             <ion-icon
-              class="bg-slate-200 shadow-xl p-4 rounded-full transition-all duration-100 relative text-left Contact"
+              class="md:bg-slate-200 md:shadow-xl md:p-4 md:rounded-full md:transition-all md:duration-100 md:relative md:text-left Contact hidden md:block"
               name="mail-outline"
             ></ion-icon>
           </a>
           <div
-            class="hidden absolute right-0 top-1/2 -translate-y-[60%] Contact"
+            class="md:block md:hidden md:absolute md:right-0 md:top-1/2 md:-translate-y-[60%] Contact hidden"
           >
             Contact
           </div>
+          <!-- phone -->
+          <a
+            href="#Contact"
+            class="bg-slate-300 rounded-xl w-3/4 text-center hover:bg-slate-400 duration-150 my-2 md:hidden"
+          >
+            <div class="my-1">Contact</div>
+          </a>
         </li>
       </ul>
+      <div
+        class="w-10 h-10 rounded-md mr-5 my-3 flex flex-col bg-black md:hidden"
+      >
+        <input
+          class="w-10 h-10 opacity-0 rounded-md absolute"
+          type="checkbox"
+          name=""
+          id=""
+        />
+        <hr class="w-3/4 h-1 rounded-md m-auto bg-white" />
+        <hr class="w-3/4 h-1 rounded-md m-auto bg-white" />
+        <hr class="w-3/4 h-1 rounded-md m-auto bg-white" />
+      </div>
     </nav>
     <!-- Akhir Navbar -->
 
@@ -101,7 +148,7 @@
         <hr class="bg-cyan-500 h-1 w-1/2 m-auto" />
       </div>
       <div
-        class="absolute flex justify-evenly items-center bottom-10 rounded-3xl w-11/12 h-4/5 md:w-3/4 glass-effect"
+        class="absolute flex justify-evenly items-center bottom-10 rounded-3xl w-11/12 h-4/5 md:w-3/4 glass-effect block"
       >
         <div class="w-2/5 h-4/5 p-4 relative GDSC">
           <h1 class="text-3xl text-center">GDSC</h1>
@@ -139,7 +186,7 @@
     <!-- Akhir Project -->
 
     <!-- Contact -->
-    <div id="Contact" class="px-10 py-5">
+    <div id="Contact" class="px-10 py-5 h-[30rem] sm:h-72">
       <div class="text-4xl w-48 m-auto">
         <h1 class="text-center">Contact</h1>
         <hr class="bg-cyan-500 h-1 w-1/2 m-auto border-none" />
@@ -174,7 +221,9 @@
       </div>
     </div>
     <!-- Akhir Contact -->
-
+    <div class="text-center h-10 bg-white">
+      Copywrite &copy; 2022, Alwin Liufandy
+    </div>
     <!-- jquery -->
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>

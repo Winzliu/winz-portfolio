@@ -14,34 +14,40 @@ html {
 /* Akhir font */
 
 /* Navbar */
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-.bg-cyan-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
-}
-[hidden] {
-  display: none;
-}
-.pl-1 {
-  margin-left: -0.2rem;
+@media (min-width: 768px) {
+  .md\:bg-slate-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  }
+  .md\:bg-cyan-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(6 182 212 / var(--tw-bg-opacity));
+  }
+  .md\:hidden {
+    display: none;
+  }
+  .md\:pl-1 {
+    margin-left: -0.2rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+  .md\:w-\[5rem\] {
+    width: 5rem;
+  }
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
-.pr-16 {
-  padding-right: 4rem;
-}
-.w-\[5rem\] {
-  width: 5rem;
-}
-.p-4 {
-  padding: 1rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+input.active:hover ~ nav ul {
+  display: block !important;
 }
 
 /* Akhir Navbar */
