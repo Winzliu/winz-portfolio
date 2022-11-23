@@ -42,7 +42,7 @@ hamburger.addEventListener('click', function(){
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
   
-  if(wScroll > -1 && wScroll < 740){
+  if(wScroll > -1 && wScroll < 580){
     // Home-on
     $("nav ul li ion-icon.Home").addClass('md:w-[5rem]')
     $("nav ul li ion-icon.Home").removeClass('md:p-4')
@@ -79,7 +79,7 @@ $(window).scroll(function(){
     $("nav ul li ion-icon.Contact").addClass('md:bg-slate-200')
     $("nav ul li ion-icon.Contact").removeClass('md:bg-cyan-500')
     $("nav ul li div.Contact").addClass('md:hidden')
-  }else if(wScroll>=740 && wScroll < 1460){
+  }else if(wScroll>=580 && wScroll < 1300){
     // Home-off
     $("nav ul li ion-icon.Home").removeClass('md:w-[5rem]')
     $("nav ul li ion-icon.Home").addClass('md:p-4')
@@ -116,7 +116,7 @@ $(window).scroll(function(){
     $("nav ul li ion-icon.Contact").addClass('md:bg-slate-200')
     $("nav ul li ion-icon.Contact").removeClass('md:bg-cyan-500')
     $("nav ul li div.Contact").addClass('md:hidden')
-  }else if(wScroll >= 1460 && wScroll < 1700){
+  }else if(wScroll >= 1300 && wScroll < 1700){
     // Home-off
     $("nav ul li ion-icon.Home").removeClass('md:w-[5rem]')
     $("nav ul li ion-icon.Home").addClass('md:p-4')
